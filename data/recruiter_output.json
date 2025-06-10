@@ -1,0 +1,203 @@
+[
+  {
+    "names_orgs": [
+      "Arjun Mehta\nDesignation:",
+      "Skills"
+    ],
+    "dates": [
+      "4 years"
+    ],
+    "skills": [
+      "python"
+    ],
+    "raw": "Arjun Mehta\nDesignation: Backend Developer\nExperience: 4 years\nSkills:\n- Django\n- REST APIs\n- Python\n- PostgreSQL",
+    "file_name": "Arjun_Mehta_Resume.docx"
+  },
+  {
+    "names_orgs": [
+      "Priya Sharma\nDesignation",
+      "Skills"
+    ],
+    "dates": [
+      "1 year"
+    ],
+    "skills": [
+      "pandas",
+      "sql"
+    ],
+    "raw": "Priya Sharma\nDesignation: Data Analyst\nExperience: 1 year\nSkills:\n- Power BI\n- SQL\n- Statistics\n- Pandas",
+    "file_name": "Priya_Sharma_Resume.docx"
+  },
+  {
+    "names_orgs": [
+      "Rahul Verma\nDesignation: Frontend Developer\nExperience",
+      "Skills"
+    ],
+    "dates": [
+      "5 years"
+    ],
+    "skills": [],
+    "raw": "Rahul Verma\nDesignation: Frontend Developer\nExperience: 5 years\nSkills:\n- Redux\n- HTML\n- CSS\n- React",
+    "file_name": "Rahul_Verma_Resume.docx"
+  },
+  {
+    "locations": [
+      "LinkedIn"
+    ],
+    "names_orgs": [
+      "DevOps Engineer",
+      "Skills",
+      "CI",
+      "DevOps Engineer",
+      "XYZ Corp\nDuration",
+      "AWS",
+      "Kubernetes",
+      "CI",
+      "Docker",
+      "Education",
+      "B.Tech in Computer Science\nABC University"
+    ],
+    "dates": [
+      "1 year",
+      "1 year",
+      "2015",
+      "2019"
+    ],
+    "skills": [
+      "aws"
+    ],
+    "raw": "Ashok\nEmail: candidate1@example.com\nPhone: +91-900001000\nLinkedIn: linkedin.com/in/candidate1\nProfessional Summary\nA motivated DevOps Engineer with 1 year of experience in relevant technologies.\nSkills\n- AWS\n- Kubernetes\n- CI/CD\n- Docker\nExperience\nDevOps Engineer at XYZ Corp\nDuration: 1 year\nWorked on various projects using AWS, Kubernetes, CI/CD, Docker.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
+    "file_name": "Resume_1_DevOps_Engineer.docx"
+  },
+  {
+    "locations": [
+      "LinkedIn",
+      "Tableau",
+      "Statistics"
+    ],
+    "names_orgs": [
+      "Data Analyst",
+      "Skills\n- Power BI",
+      "Data Analyst",
+      "XYZ Corp\nDuration",
+      "Power BI",
+      "SQL",
+      "Education",
+      "B.Tech in Computer Science\nABC University"
+    ],
+    "dates": [
+      "3 years",
+      "3 years",
+      "2015",
+      "2019"
+    ],
+    "skills": [
+      "sql"
+    ],
+    "raw": "Ram\nEmail: candidate2@example.com\nPhone: +91-900002000\nLinkedIn: linkedin.com/in/candidate2\nProfessional Summary\nA motivated Data Analyst with 3 years of experience in relevant technologies.\nSkills\n- Power BI\n- Tableau\n- Statistics\n- SQL\nExperience\nData Analyst at XYZ Corp\nDuration: 3 years\nWorked on various projects using Power BI, Tableau, Statistics, SQL.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
+    "file_name": "Resume_2_Data_Analyst.docx"
+  },
+  {
+    "locations": [
+      "LinkedIn"
+    ],
+    "dates": [
+      "1 year",
+      "1 year",
+      "2015",
+      "2019"
+    ],
+    "names_orgs": [
+      "Skills",
+      "Frontend Developer",
+      "XYZ Corp\nDuration",
+      "CSS",
+      "Bootstrap",
+      "Education",
+      "B.Tech in Computer Science\nABC University"
+    ],
+    "skills": [],
+    "raw": "Ganesh\nEmail: candidate3@example.com\nPhone: +91-900003000\nLinkedIn: linkedin.com/in/candidate3\nProfessional Summary\nA motivated Frontend Developer with 1 year of experience in relevant technologies.\nSkills\n- CSS\n- React\n- Vue.js\n- Bootstrap\nExperience\nFrontend Developer at XYZ Corp\nDuration: 1 year\nWorked on various projects using CSS, React, Vue.js, Bootstrap.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
+    "file_name": "Resume_3_Frontend_Developer.docx"
+  },
+  {
+    "locations": [
+      "Santhosh",
+      "LinkedIn"
+    ],
+    "names_orgs": [
+      "Machine Learning Engineer",
+      "Skills",
+      "Machine Learning Engineer",
+      "XYZ Corp\nDuration",
+      "Education",
+      "B.Tech in Computer Science\nABC University"
+    ],
+    "dates": [
+      "4 years",
+      "4 years",
+      "2015",
+      "2019"
+    ],
+    "skills": [
+      "tensorflow",
+      "python"
+    ],
+    "raw": "Santhosh\nEmail: candidate4@example.com\nPhone: +91-900004000\nLinkedIn: linkedin.com/in/candidate4\nProfessional Summary\nA motivated Machine Learning Engineer with 4 years of experience in relevant technologies.\nSkills\n- Numpy\n- Python\n- TensorFlow\n- Pytorch\nExperience\nMachine Learning Engineer at XYZ Corp\nDuration: 4 years\nWorked on various projects using Numpy, Python, TensorFlow, Pytorch.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
+    "file_name": "Resume_4_Machine_Learning_Engineer.docx"
+  },
+  {
+    "names_orgs": [
+      "Ayush Marthe",
+      "Backend Developer",
+      "Backend Developer",
+      "XYZ Corp\nDuration",
+      "Python, Django",
+      "Education",
+      "B.Tech in Computer Science\nABC University"
+    ],
+    "locations": [
+      "LinkedIn",
+      "Flask"
+    ],
+    "dates": [
+      "5 years",
+      "5 years",
+      "2015",
+      "2019"
+    ],
+    "skills": [
+      "python"
+    ],
+    "raw": "Ayush Marthe\nEmail: candidate5@example.com\nPhone: +91-900005000\nLinkedIn: linkedin.com/in/candidate5\nProfessional Summary\nA motivated Backend Developer with 5 years of experience in relevant technologies.\nSkills\n- Python\n- Django\n- Node.js\n- Flask\nExperience\nBackend Developer at XYZ Corp\nDuration: 5 years\nWorked on various projects using Python, Django, Node.js, Flask.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
+    "file_name": "Resume_5_Backend_Developer.docx"
+  },
+  {
+    "names_orgs": [
+      "Sneha Reddy\nDesignation",
+      "Skills"
+    ],
+    "dates": [
+      "5 years"
+    ],
+    "skills": [
+      "tensorflow",
+      "python",
+      "pandas"
+    ],
+    "raw": "Sneha Reddy\nDesignation: Machine Learning Engineer\nExperience: 5 years\nSkills:\n- Python\n- Scikit-learn\n- TensorFlow\n- Pandas",
+    "file_name": "Sneha_Reddy_Resume.docx"
+  },
+  {
+    "names_orgs": [
+      "Vikram Iyer\nDesignation",
+      "Skills"
+    ],
+    "dates": [
+      "3 years"
+    ],
+    "skills": [],
+    "raw": "Vikram Iyer\nDesignation: UI/UX Designer\nExperience: 3 years\nSkills:\n- User Research\n- Sketch\n- Figma\n- Wireframing",
+    "file_name": "Vikram_Iyer_Resume.docx"
+  }
+]

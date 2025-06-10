@@ -1,0 +1,166 @@
+[
+  {
+    "locations": [
+      "LinkedIn",
+      "Tableau",
+      "Statistics"
+    ],
+    "names_orgs": [
+      "Data Analyst",
+      "Skills\n- Power BI",
+      "Data Analyst",
+      "XYZ Corp\nDuration",
+      "Power BI",
+      "SQL",
+      "Education",
+      "B.Tech in Computer Science\nABC University"
+    ],
+    "dates": [
+      "3 years",
+      "3 years",
+      "2015",
+      "2019"
+    ],
+    "skills": [
+      "sql"
+    ],
+    "raw": "Ram\nEmail: candidate2@example.com\nPhone: +91-900002000\nLinkedIn: linkedin.com/in/candidate2\nProfessional Summary\nA motivated Data Analyst with 3 years of experience in relevant technologies.\nSkills\n- Power BI\n- Tableau\n- Statistics\n- SQL\nExperience\nData Analyst at XYZ Corp\nDuration: 3 years\nWorked on various projects using Power BI, Tableau, Statistics, SQL.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
+    "file_name": "Resume_2_Data_Analyst.docx",
+    "email": "candidate2@example.com",
+    "phone": "+91-900002000",
+    "clean_text": "Ram Email: candidate2@example.com Phone: +91-900002000 LinkedIn: linkedin.com/in/candidate2 Professional Summary A motivated Data Analyst with 3 years of experience in relevant technologies. Skills - Power BI - Tableau - Statistics - SQL Experience Data Analyst at XYZ Corp Duration: 3 years Worked on various projects using Power BI, Tableau, Statistics, SQL. Education B.Tech in Computer Science ABC University 2015 \u2013 2019",
+    "match_score": 47.2,
+    "matched_skills": [],
+    "missing_skills": [
+      "data",
+      "need",
+      "analyst"
+    ],
+    "soft_skills": [],
+    "red_flags": [],
+    "recommendation_score": 47.2
+  },
+  {
+    "names_orgs": [
+      "Arjun Mehta\nDesignation:",
+      "Skills"
+    ],
+    "dates": [
+      "4 years"
+    ],
+    "skills": [
+      "python"
+    ],
+    "raw": "Arjun Mehta\nDesignation: Backend Developer\nExperience: 4 years\nSkills:\n- Django\n- REST APIs\n- Python\n- PostgreSQL",
+    "file_name": "Arjun_Mehta_Resume.docx",
+    "email": null,
+    "phone": null,
+    "clean_text": "Arjun Mehta Designation: Backend Developer Experience: 4 years Skills: - Django - REST APIs - Python - PostgreSQL",
+    "match_score": 27.23,
+    "matched_skills": [],
+    "missing_skills": [
+      "data",
+      "need",
+      "analyst"
+    ],
+    "soft_skills": [],
+    "red_flags": [],
+    "recommendation_score": 27.23
+  },
+  {
+    "names_orgs": [
+      "Ayush Marthe",
+      "Backend Developer",
+      "Backend Developer",
+      "XYZ Corp\nDuration",
+      "Python, Django",
+      "Education",
+      "B.Tech in Computer Science\nABC University"
+    ],
+    "locations": [
+      "LinkedIn",
+      "Flask"
+    ],
+    "dates": [
+      "5 years",
+      "5 years",
+      "2015",
+      "2019"
+    ],
+    "skills": [
+      "python"
+    ],
+    "raw": "Ayush Marthe\nEmail: candidate5@example.com\nPhone: +91-900005000\nLinkedIn: linkedin.com/in/candidate5\nProfessional Summary\nA motivated Backend Developer with 5 years of experience in relevant technologies.\nSkills\n- Python\n- Django\n- Node.js\n- Flask\nExperience\nBackend Developer at XYZ Corp\nDuration: 5 years\nWorked on various projects using Python, Django, Node.js, Flask.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
+    "file_name": "Resume_5_Backend_Developer.docx",
+    "email": "candidate5@example.com",
+    "phone": "+91-900005000",
+    "clean_text": "Ayush Marthe Email: candidate5@example.com Phone: +91-900005000 LinkedIn: linkedin.com/in/candidate5 Professional Summary A motivated Backend Developer with 5 years of experience in relevant technologies. Skills - Python - Django - Node.js - Flask Experience Backend Developer at XYZ Corp Duration: 5 years Worked on various projects using Python, Django, Node.js, Flask. Education B.Tech in Computer Science ABC University 2015 \u2013 2019",
+    "match_score": 27.23,
+    "matched_skills": [],
+    "missing_skills": [
+      "data",
+      "need",
+      "analyst"
+    ],
+    "soft_skills": [],
+    "red_flags": [],
+    "recommendation_score": 27.23
+  },
+  {
+    "names_orgs": [
+      "Priya Sharma\nDesignation",
+      "Skills"
+    ],
+    "dates": [
+      "1 year"
+    ],
+    "skills": [
+      "pandas",
+      "sql"
+    ],
+    "raw": "Priya Sharma\nDesignation: Data Analyst\nExperience: 1 year\nSkills:\n- Power BI\n- SQL\n- Statistics\n- Pandas",
+    "file_name": "Priya_Sharma_Resume.docx",
+    "email": null,
+    "phone": null,
+    "clean_text": "Priya Sharma Designation: Data Analyst Experience: 1 year Skills: - Power BI - SQL - Statistics - Pandas",
+    "match_score": 26.16,
+    "matched_skills": [],
+    "missing_skills": [
+      "data",
+      "need",
+      "analyst"
+    ],
+    "soft_skills": [],
+    "red_flags": [],
+    "recommendation_score": 26.16
+  },
+  {
+    "names_orgs": [
+      "Sneha Reddy\nDesignation",
+      "Skills"
+    ],
+    "dates": [
+      "5 years"
+    ],
+    "skills": [
+      "tensorflow",
+      "python",
+      "pandas"
+    ],
+    "raw": "Sneha Reddy\nDesignation: Machine Learning Engineer\nExperience: 5 years\nSkills:\n- Python\n- Scikit-learn\n- TensorFlow\n- Pandas",
+    "file_name": "Sneha_Reddy_Resume.docx",
+    "email": null,
+    "phone": null,
+    "clean_text": "Sneha Reddy Designation: Machine Learning Engineer Experience: 5 years Skills: - Python - Scikit-learn - TensorFlow - Pandas",
+    "match_score": 19.21,
+    "matched_skills": [],
+    "missing_skills": [
+      "data",
+      "need",
+      "analyst"
+    ],
+    "soft_skills": [],
+    "red_flags": [],
+    "recommendation_score": 19.21
+  }
+]
