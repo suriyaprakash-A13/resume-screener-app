@@ -171,8 +171,8 @@
       "2019"
     ],
     "skills": [
-      "python",
-      "tensorflow"
+      "tensorflow",
+      "python"
     ],
     "raw": "Santhosh\nEmail: candidate4@example.com\nPhone: +91-900004000\nLinkedIn: linkedin.com/in/candidate4\nProfessional Summary\nA motivated Machine Learning Engineer with 4 years of experience in relevant technologies.\nSkills\n- Numpy\n- Python\n- TensorFlow\n- Pytorch\nExperience\nMachine Learning Engineer at XYZ Corp\nDuration: 4 years\nWorked on various projects using Numpy, Python, TensorFlow, Pytorch.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
     "file_name": "Resume_4_Machine_Learning_Engineer.docx",
@@ -223,8 +223,8 @@
       "5 years"
     ],
     "skills": [
-      "python",
       "tensorflow",
+      "python",
       "pandas"
     ],
     "raw": "Sneha Reddy\nDesignation: Machine Learning Engineer\nExperience: 5 years\nSkills:\n- Python\n- Scikit-learn\n- TensorFlow\n- Pandas",
