@@ -1,47 +1,77 @@
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parents[1]))
-from pathlib import Path
 import re
 import json
 
-# ✅ Import from resume_parser
+# Add parent directory to sys.path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
+# ✅ Imports
 from utils.resume_parser import extract_text, parse_resume
 
-# 📥 Setup project paths
+# 📁 Setup paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-RESUME_FOLDER = PROJECT_ROOT / "data" / "resumes"
+INPUT_FILE = PROJECT_ROOT / "data" / "recruiter_output.json"
 OUTPUT_FILE = PROJECT_ROOT / "data" / "recruiter_enriched.json"
 
-# 🔍 Extract email using regex
+# 📧 Extract email
 def extract_email(text):
     match = re.search(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", text)
     return match.group(0) if match else None
 
-# 📞 Extract phone using regex
+# 📞 Extract phone number
 def extract_phone(text):
     match = re.search(r"\+?\d[\d\s\-]{8,}\d", text)
     return match.group(0) if match else None
 
-# 🧹 Clean resume text
+# 🧼 Clean resume text
 def clean_resume(text):
     return ' '.join(text.split())
 
-# 🤖 Recruiter agent to enrich parsed data
+# 🧮 Score based on contact info
+def compute_recruiter_score(email, phone):
+    score = 0
+    if email:
+        score += 50
+    if phone:
+        score += 50
+    return score  # Out of 100
+
+# 💬 Feedback generator
+def recruiter_feedback(score, email, phone):
+    feedback = []
+    if not email:
+        feedback.append("Missing email.")
+    if not phone:
+        feedback.append("Missing phone number.")
+    if score == 100:
+        feedback.append("Contact info complete.")
+    elif score >= 50:
+        feedback.append("Partial contact info available.")
+    else:
+        feedback.append("No contact details found.")
+    return " ".join(feedback)
+
+# 🤖 Main agent function
 def recruiter_agent(parsed_resume):
-    full_text = parsed_resume.get("raw", "")
+    full_text = parsed_resume.get("raw", "") or parsed_resume.get("full_text", "")
+    email = extract_email(full_text)
+    phone = extract_phone(full_text)
+    recruiter_score = compute_recruiter_score(email, phone)
+    feedback = recruiter_feedback(recruiter_score, email, phone)
+
     enriched = parsed_resume.copy()
-
-    enriched["email"] = extract_email(full_text)
-    enriched["phone"] = extract_phone(full_text)
-    enriched["clean_text"] = clean_resume(full_text)
-
+    enriched.update({
+        "email": email,
+        "phone": phone,
+        "clean_text": clean_resume(full_text),
+        "recruiter_score": recruiter_score,
+        "recruiter_feedback": feedback
+    })
     return enriched
 
-# 🚀 Batch processor for all resumes
+# 🗂️ Batch processor
 def batch_process_recruiter():
-    INPUT_FILE = PROJECT_ROOT / "data" / "recruiter_output.json"
-
     if not INPUT_FILE.exists():
         print(f"❌ Input file not found: {INPUT_FILE}")
         return

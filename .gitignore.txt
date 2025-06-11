@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+.venv
+resume-env/
+*.pdf
+*.docx
+*.DS_Store
+*.log
+data/recruiter_output.json
+data/recruiter_enriched.json
+data/analyst_output.json
+data/hr_output.json
+data/final_recommendations.json
+data/top_5_candidates.pdf

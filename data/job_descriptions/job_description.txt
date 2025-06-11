@@ -1,1 +1,26 @@
-i need a data analyst
+We are seeking a skilled and detail-oriented Data Analyst to join our analytics team. The ideal candidate should have strong experience with data analysis, reporting tools, and business intelligence platforms.
+
+*Key Responsibilities:*
+- Analyze large datasets to identify trends, patterns, and actionable insights
+- Design and build dashboards using Power BI or Tableau
+- Create SQL queries to extract and transform data
+- Work with cross-functional teams to support data-driven decisions
+
+*Required Skills:*
+- Strong proficiency in SQL and Excel
+- Experience with Power BI or Tableau
+- Python for data analysis (pandas, NumPy preferred)
+- Excellent communication and storytelling with data
+
+*Preferred Skills:*
+- Experience with cloud platforms like AWS or Azure
+- Familiarity with statistical methods and A/B testing
+- Understanding of data warehousing concepts
+
+*Soft Skills:*
+- Problem-solving mindset
+- Attention to detail
+- Collaboration and communication skills
+
+Experience: 2–4 years in a data analysis or BI role preferred.
+Location: Remote or Bangalore office

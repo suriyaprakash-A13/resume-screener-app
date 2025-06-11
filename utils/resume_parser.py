@@ -1,39 +1,40 @@
 import os
-import pathlib
+import json
 import re
 import docx
+from pathlib import Path
 from pypdf import PdfReader
 from collections import defaultdict
-
-# ✅ Load spaCy English model (auto-download if needed)
 import spacy
-try:
-    nlp = spacy.load("en_core_web_sm")
-except:
-    os.system("python -m spacy download en_core_web_sm")
-    nlp = spacy.load("en_core_web_sm")
 
-# 📄 Extract text from PDF
-def extract_from_pdf(path: str) -> str:
-    reader = PdfReader(path)
+# ✅ Load the model directly (it will be installed via requirements.txt)
+nlp = spacy.load("en_core_web_sm")
+
+# 📁 Path setup
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+RESUME_FOLDER = PROJECT_ROOT / "data" / "resumes"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "recruiter_output.json"
+
+# 📄 Extract from PDF
+def extract_from_pdf(file_path: Path) -> str:
+    reader = PdfReader(str(file_path))
     return "\n".join([page.extract_text() or "" for page in reader.pages])
 
-# 📄 Extract text from DOCX
-def extract_from_docx(path: str) -> str:
-    doc = docx.Document(path)
+# 📄 Extract from DOCX
+def extract_from_docx(file_path: Path) -> str:
+    doc = docx.Document(str(file_path))
     return "\n".join([para.text for para in doc.paragraphs])
 
-# 📄 Generic extractor for any file
-def extract_text(file_path: str) -> str:
-    path = pathlib.Path(file_path)
-    if path.suffix.lower() == ".pdf":
-        return extract_from_pdf(str(path))
-    elif path.suffix.lower() in {".docx", ".doc"}:
-        return extract_from_docx(str(path))
+# 📄 Universal extractor
+def extract_text(file_path: Path) -> str:
+    if file_path.suffix.lower() == ".pdf":
+        return extract_from_pdf(file_path)
+    elif file_path.suffix.lower() == ".docx":
+        return extract_from_docx(file_path)
     else:
-        raise ValueError("Unsupported file format")
+        raise ValueError(f"Unsupported file type: {file_path.name}")
 
-# 🔍 Parse text using spaCy & regex
+# 🔍 Parse resume text with spaCy + regex
 def parse_resume(text: str) -> dict:
     doc = nlp(text)
     out = defaultdict(list)
@@ -46,33 +47,30 @@ def parse_resume(text: str) -> dict:
         elif ent.label_ == "DATE":
             out["dates"].append(ent.text)
 
-    # 🎯 Extract basic skills (customize as needed)
-    skills = re.findall(r"\b(python|java|sql|excel|pandas|tensorflow|aws|powerbi)\b", text, re.I)
+    skills = re.findall(r"\b(python|sql|excel|pandas|tensorflow|aws|powerbi|communication|django)\b", text, re.I)
     out["skills"] = list(set(map(str.lower, skills)))
-
-    # Return preview text and full info
-    out["raw"] = text[:2000]  # Preview text
+    out["raw"] = text[:2000]
     return dict(out)
 
-# 🧪 Batch parse all resumes in /data/resumes and save to JSON
+# 🚀 Batch parse all resumes
 def batch_parse_resumes():
-    import json
+    all_parsed = []
 
-    RESUME_FOLDER = pathlib.Path(__file__).resolve().parents[1] / "data" / "resumes"
-    OUTPUT_FILE = pathlib.Path(__file__).resolve().parents[1] / "data" / "recruiter_output.json"
+    if not RESUME_FOLDER.exists():
+        print(f"❌ Folder not found: {RESUME_FOLDER}")
+        return
 
-    parsed_resumes = []
     for file in RESUME_FOLDER.iterdir():
-        if file.suffix in [".pdf", ".docx"]:
+        if file.suffix.lower() in [".pdf", ".docx"]:
             try:
                 text = extract_text(file)
                 parsed = parse_resume(text)
                 parsed["file_name"] = file.name
-                parsed_resumes.append(parsed)
+                all_parsed.append(parsed)
             except Exception as e:
-                print(f"❌ Error parsing {file.name}: {e}")
+                print(f"⚠️ Error processing {file.name}: {e}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(parsed_resumes, f, indent=2)
+        json.dump(all_parsed, f, indent=2)
 
-    print(f"✅ Parsed {len(parsed_resumes)} resumes and saved to {OUTPUT_FILE}")
+    print(f"✅ Parsed {len(all_parsed)} resumes and saved to {OUTPUT_FILE}")

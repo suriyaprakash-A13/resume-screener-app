@@ -8,20 +8,19 @@
       "4 years"
     ],
     "skills": [
-      "python"
+      "python",
+      "django"
     ],
     "raw": "Arjun Mehta\nDesignation: Backend Developer\nExperience: 4 years\nSkills:\n- Django\n- REST APIs\n- Python\n- PostgreSQL",
     "file_name": "Arjun_Mehta_Resume.docx",
     "email": null,
     "phone": null,
     "clean_text": "Arjun Mehta Designation: Backend Developer Experience: 4 years Skills: - Django - REST APIs - Python - PostgreSQL",
-    "match_score": 27.23,
-    "matched_skills": [],
-    "missing_skills": [
-      "data",
-      "need",
-      "analyst"
-    ]
+    "recruiter_score": 0,
+    "recruiter_feedback": "Missing email. Missing phone number. No contact details found.",
+    "analyst_score": 46.38,
+    "match_score": 46.38,
+    "analyst_feedback": "Some relevant skills but also gaps."
   },
   {
     "names_orgs": [
@@ -32,21 +31,19 @@
       "1 year"
     ],
     "skills": [
-      "pandas",
-      "sql"
+      "sql",
+      "pandas"
     ],
     "raw": "Priya Sharma\nDesignation: Data Analyst\nExperience: 1 year\nSkills:\n- Power BI\n- SQL\n- Statistics\n- Pandas",
     "file_name": "Priya_Sharma_Resume.docx",
     "email": null,
     "phone": null,
     "clean_text": "Priya Sharma Designation: Data Analyst Experience: 1 year Skills: - Power BI - SQL - Statistics - Pandas",
-    "match_score": 26.16,
-    "matched_skills": [],
-    "missing_skills": [
-      "data",
-      "need",
-      "analyst"
-    ]
+    "recruiter_score": 0,
+    "recruiter_feedback": "Missing email. Missing phone number. No contact details found.",
+    "analyst_score": 64.1,
+    "match_score": 64.1,
+    "analyst_feedback": "Moderate alignment with job description."
   },
   {
     "names_orgs": [
@@ -62,9 +59,11 @@
     "email": null,
     "phone": null,
     "clean_text": "Rahul Verma Designation: Frontend Developer Experience: 5 years Skills: - Redux - HTML - CSS - React",
-    "match_score": 0,
-    "matched_skills": [],
-    "missing_skills": []
+    "recruiter_score": 0,
+    "recruiter_feedback": "Missing email. Missing phone number. No contact details found.",
+    "analyst_score": 30.22,
+    "match_score": 30.22,
+    "analyst_feedback": "Some relevant skills but also gaps."
   },
   {
     "locations": [
@@ -97,13 +96,11 @@
     "email": "candidate1@example.com",
     "phone": "+91-900001000",
     "clean_text": "Ashok Email: candidate1@example.com Phone: +91-900001000 LinkedIn: linkedin.com/in/candidate1 Professional Summary A motivated DevOps Engineer with 1 year of experience in relevant technologies. Skills - AWS - Kubernetes - CI/CD - Docker Experience DevOps Engineer at XYZ Corp Duration: 1 year Worked on various projects using AWS, Kubernetes, CI/CD, Docker. Education B.Tech in Computer Science ABC University 2015 \u2013 2019",
-    "match_score": 18.18,
-    "matched_skills": [],
-    "missing_skills": [
-      "data",
-      "need",
-      "analyst"
-    ]
+    "recruiter_score": 100,
+    "recruiter_feedback": "Contact info complete.",
+    "analyst_score": 46.58,
+    "match_score": 46.58,
+    "analyst_feedback": "Some relevant skills but also gaps."
   },
   {
     "locations": [
@@ -135,13 +132,11 @@
     "email": "candidate2@example.com",
     "phone": "+91-900002000",
     "clean_text": "Ram Email: candidate2@example.com Phone: +91-900002000 LinkedIn: linkedin.com/in/candidate2 Professional Summary A motivated Data Analyst with 3 years of experience in relevant technologies. Skills - Power BI - Tableau - Statistics - SQL Experience Data Analyst at XYZ Corp Duration: 3 years Worked on various projects using Power BI, Tableau, Statistics, SQL. Education B.Tech in Computer Science ABC University 2015 \u2013 2019",
-    "match_score": 47.2,
-    "matched_skills": [],
-    "missing_skills": [
-      "data",
-      "need",
-      "analyst"
-    ]
+    "recruiter_score": 100,
+    "recruiter_feedback": "Contact info complete.",
+    "analyst_score": 69.34,
+    "match_score": 69.34,
+    "analyst_feedback": "Moderate alignment with job description."
   },
   {
     "locations": [
@@ -168,9 +163,11 @@
     "email": "candidate3@example.com",
     "phone": "+91-900003000",
     "clean_text": "Ganesh Email: candidate3@example.com Phone: +91-900003000 LinkedIn: linkedin.com/in/candidate3 Professional Summary A motivated Frontend Developer with 1 year of experience in relevant technologies. Skills - CSS - React - Vue.js - Bootstrap Experience Frontend Developer at XYZ Corp Duration: 1 year Worked on various projects using CSS, React, Vue.js, Bootstrap. Education B.Tech in Computer Science ABC University 2015 \u2013 2019",
-    "match_score": 0,
-    "matched_skills": [],
-    "missing_skills": []
+    "recruiter_score": 100,
+    "recruiter_feedback": "Contact info complete.",
+    "analyst_score": 37.89,
+    "match_score": 37.89,
+    "analyst_feedback": "Some relevant skills but also gaps."
   },
   {
     "locations": [
@@ -192,21 +189,19 @@
       "2019"
     ],
     "skills": [
-      "tensorflow",
-      "python"
+      "python",
+      "tensorflow"
     ],
     "raw": "Santhosh\nEmail: candidate4@example.com\nPhone: +91-900004000\nLinkedIn: linkedin.com/in/candidate4\nProfessional Summary\nA motivated Machine Learning Engineer with 4 years of experience in relevant technologies.\nSkills\n- Numpy\n- Python\n- TensorFlow\n- Pytorch\nExperience\nMachine Learning Engineer at XYZ Corp\nDuration: 4 years\nWorked on various projects using Numpy, Python, TensorFlow, Pytorch.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
     "file_name": "Resume_4_Machine_Learning_Engineer.docx",
     "email": "candidate4@example.com",
     "phone": "+91-900004000",
     "clean_text": "Santhosh Email: candidate4@example.com Phone: +91-900004000 LinkedIn: linkedin.com/in/candidate4 Professional Summary A motivated Machine Learning Engineer with 4 years of experience in relevant technologies. Skills - Numpy - Python - TensorFlow - Pytorch Experience Machine Learning Engineer at XYZ Corp Duration: 4 years Worked on various projects using Numpy, Python, TensorFlow, Pytorch. Education B.Tech in Computer Science ABC University 2015 \u2013 2019",
-    "match_score": 18.08,
-    "matched_skills": [],
-    "missing_skills": [
-      "data",
-      "need",
-      "analyst"
-    ]
+    "recruiter_score": 100,
+    "recruiter_feedback": "Contact info complete.",
+    "analyst_score": 42.06,
+    "match_score": 42.06,
+    "analyst_feedback": "Some relevant skills but also gaps."
   },
   {
     "names_orgs": [
@@ -229,20 +224,19 @@
       "2019"
     ],
     "skills": [
-      "python"
+      "python",
+      "django"
     ],
     "raw": "Ayush Marthe\nEmail: candidate5@example.com\nPhone: +91-900005000\nLinkedIn: linkedin.com/in/candidate5\nProfessional Summary\nA motivated Backend Developer with 5 years of experience in relevant technologies.\nSkills\n- Python\n- Django\n- Node.js\n- Flask\nExperience\nBackend Developer at XYZ Corp\nDuration: 5 years\nWorked on various projects using Python, Django, Node.js, Flask.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
     "file_name": "Resume_5_Backend_Developer.docx",
     "email": "candidate5@example.com",
     "phone": "+91-900005000",
     "clean_text": "Ayush Marthe Email: candidate5@example.com Phone: +91-900005000 LinkedIn: linkedin.com/in/candidate5 Professional Summary A motivated Backend Developer with 5 years of experience in relevant technologies. Skills - Python - Django - Node.js - Flask Experience Backend Developer at XYZ Corp Duration: 5 years Worked on various projects using Python, Django, Node.js, Flask. Education B.Tech in Computer Science ABC University 2015 \u2013 2019",
-    "match_score": 27.23,
-    "matched_skills": [],
-    "missing_skills": [
-      "data",
-      "need",
-      "analyst"
-    ]
+    "recruiter_score": 100,
+    "recruiter_feedback": "Contact info complete.",
+    "analyst_score": 42.03,
+    "match_score": 42.03,
+    "analyst_feedback": "Some relevant skills but also gaps."
   },
   {
     "names_orgs": [
@@ -253,8 +247,8 @@
       "5 years"
     ],
     "skills": [
-      "tensorflow",
       "python",
+      "tensorflow",
       "pandas"
     ],
     "raw": "Sneha Reddy\nDesignation: Machine Learning Engineer\nExperience: 5 years\nSkills:\n- Python\n- Scikit-learn\n- TensorFlow\n- Pandas",
@@ -262,13 +256,11 @@
     "email": null,
     "phone": null,
     "clean_text": "Sneha Reddy Designation: Machine Learning Engineer Experience: 5 years Skills: - Python - Scikit-learn - TensorFlow - Pandas",
-    "match_score": 19.21,
-    "matched_skills": [],
-    "missing_skills": [
-      "data",
-      "need",
-      "analyst"
-    ]
+    "recruiter_score": 0,
+    "recruiter_feedback": "Missing email. Missing phone number. No contact details found.",
+    "analyst_score": 47.64,
+    "match_score": 47.64,
+    "analyst_feedback": "Some relevant skills but also gaps."
   },
   {
     "names_orgs": [
@@ -284,8 +276,10 @@
     "email": null,
     "phone": null,
     "clean_text": "Vikram Iyer Designation: UI/UX Designer Experience: 3 years Skills: - User Research - Sketch - Figma - Wireframing",
-    "match_score": 0,
-    "matched_skills": [],
-    "missing_skills": []
+    "recruiter_score": 0,
+    "recruiter_feedback": "Missing email. Missing phone number. No contact details found.",
+    "analyst_score": 32.61,
+    "match_score": 32.61,
+    "analyst_feedback": "Some relevant skills but also gaps."
   }
 ]

@@ -1,46 +1,57 @@
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parents[1]))
-
 import json
 
-# === Paths ===
+# Add parent directory to sys.path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
+# ✅ Setup paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 INPUT_FILE = PROJECT_ROOT / "data" / "hr_output.json"
 OUTPUT_FILE = PROJECT_ROOT / "data" / "final_recommendations.json"
 
-# === Recommender Logic
-def recommender_agent(resume: dict) -> dict:
-    score = resume.get("match_score", 0)
+# 🧮 Compute final weighted score
+def compute_final_score(rec_score, ana_score, hr_score):
+    # Weights can be tuned as needed
+    return round(0.2 * rec_score + 0.5 * ana_score + 0.3 * hr_score, 2)
 
-    # Bonus for soft skills
-    soft_skills = resume.get("soft_skills", [])
-    score += 2 * len(soft_skills)
+# 💬 Generate final recommendation
+def generate_recommendation(score):
+    if score >= 80:
+        return "Highly recommended for interview."
+    elif score >= 60:
+        return "Recommended, meets most expectations."
+    elif score >= 40:
+        return "May be considered with reservations."
+    else:
+        return "Not recommended for this role."
 
-    # Penalty for red flags
-    red_flags = resume.get("red_flags", [])
-    score -= 5 * len(red_flags)
+# 🤖 Main agent
+def recommender_agent(resume):
+    rec_score = resume.get("recruiter_score", 0)
+    ana_score = resume.get("analyst_score", 0)
+    hr_score = resume.get("hr_score", 0)
 
-    # Normalize score between 0 and 100
-    score = max(0, min(100, score))
-    resume["recommendation_score"] = round(score, 2)
+    final_score = compute_final_score(rec_score, ana_score, hr_score)
+    feedback = generate_recommendation(final_score)
+
+    resume["recommendation_score"] = final_score
+    resume["recommendation_feedback"] = feedback
+
     return resume
 
-# === Batch Processor
+# 🗂️ Batch processor
 def batch_process_recommender():
     if not INPUT_FILE.exists():
-        print(f"❌ Input file missing: {INPUT_FILE}")
+        print(f"❌ Input file not found: {INPUT_FILE}")
         return
 
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         resumes = json.load(f)
 
-    scored = [recommender_agent(r) for r in resumes]
-    ranked = sorted(scored, key=lambda x: x["recommendation_score"], reverse=True)
-
-    top_5 = ranked[:5]
+    final_output = [recommender_agent(resume) for resume in resumes]
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(top_5, f, indent=2)
+        json.dump(final_output, f, indent=2)
 
-    print(f"✅ Top 5 candidates saved to {OUTPUT_FILE}")
+    print(f"✅ Final recommendations saved to {OUTPUT_FILE}")

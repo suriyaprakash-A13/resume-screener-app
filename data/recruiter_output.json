@@ -8,7 +8,8 @@
       "4 years"
     ],
     "skills": [
-      "python"
+      "python",
+      "django"
     ],
     "raw": "Arjun Mehta\nDesignation: Backend Developer\nExperience: 4 years\nSkills:\n- Django\n- REST APIs\n- Python\n- PostgreSQL",
     "file_name": "Arjun_Mehta_Resume.docx"
@@ -22,8 +23,8 @@
       "1 year"
     ],
     "skills": [
-      "pandas",
-      "sql"
+      "sql",
+      "pandas"
     ],
     "raw": "Priya Sharma\nDesignation: Data Analyst\nExperience: 1 year\nSkills:\n- Power BI\n- SQL\n- Statistics\n- Pandas",
     "file_name": "Priya_Sharma_Resume.docx"
@@ -140,8 +141,8 @@
       "2019"
     ],
     "skills": [
-      "tensorflow",
-      "python"
+      "python",
+      "tensorflow"
     ],
     "raw": "Santhosh\nEmail: candidate4@example.com\nPhone: +91-900004000\nLinkedIn: linkedin.com/in/candidate4\nProfessional Summary\nA motivated Machine Learning Engineer with 4 years of experience in relevant technologies.\nSkills\n- Numpy\n- Python\n- TensorFlow\n- Pytorch\nExperience\nMachine Learning Engineer at XYZ Corp\nDuration: 4 years\nWorked on various projects using Numpy, Python, TensorFlow, Pytorch.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
     "file_name": "Resume_4_Machine_Learning_Engineer.docx"
@@ -167,7 +168,8 @@
       "2019"
     ],
     "skills": [
-      "python"
+      "python",
+      "django"
     ],
     "raw": "Ayush Marthe\nEmail: candidate5@example.com\nPhone: +91-900005000\nLinkedIn: linkedin.com/in/candidate5\nProfessional Summary\nA motivated Backend Developer with 5 years of experience in relevant technologies.\nSkills\n- Python\n- Django\n- Node.js\n- Flask\nExperience\nBackend Developer at XYZ Corp\nDuration: 5 years\nWorked on various projects using Python, Django, Node.js, Flask.\nEducation\nB.Tech in Computer Science\nABC University\n2015 \u2013 2019",
     "file_name": "Resume_5_Backend_Developer.docx"
@@ -181,8 +183,8 @@
       "5 years"
     ],
     "skills": [
-      "tensorflow",
       "python",
+      "tensorflow",
       "pandas"
     ],
     "raw": "Sneha Reddy\nDesignation: Machine Learning Engineer\nExperience: 5 years\nSkills:\n- Python\n- Scikit-learn\n- TensorFlow\n- Pandas",
