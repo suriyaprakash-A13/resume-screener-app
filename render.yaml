@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: resume-screener-app
-    env: python
-    plan: free  # or choose a paid plan
-    buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run app.py --server.port 10000 --server.enableCORS false
